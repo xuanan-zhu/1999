@@ -1,5 +1,5 @@
 audio{
-    /*display: none;*/
+    display: none;
 }
 body{
     background: url("../img/bgphoto.jpg") ;
@@ -24,7 +24,7 @@ body{
     height: 600px;
     width: 600px;
     float: right;
-	margin-right: 50px;
+    margin-right: 50px;
 }
 #layout{
     height: 600px;
