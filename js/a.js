@@ -12,12 +12,10 @@ function toggleSound() {
     music.paused = false;
     music.play();
 }
-var audio = document.getElementsByTagName("audio");
 var wp = document.getElementById("right_write");
 wp.onclick = function () {
     var w_img = document.getElementById("writeshow");
     w_img.src = "./img/lettershow.jpg";
-    flag = true;
     setInterval(changePic,5000);
     setInterval("toggleSound()",100);
 };
