@@ -1,0 +1,32 @@
+audio{
+    /*display: none;*/
+}
+body{
+    background: url("../img/bgphoto.jpg") ;
+}
+#top_div{
+    background: url("../img/title1.jpg") ;
+}
+#top_div{
+    height: 200px;
+    width: 1500px;
+    margin: 6px;
+    border-radius: 30px;
+}
+#left_photo{
+    height: 600px;
+    width: 600px;
+    border-radius: 15px;
+    float: left;
+    margin-left: 15px;
+}
+#right_write{
+    height: 600px;
+    width: 600px;
+    float: right;
+	margin-right: 50px;
+}
+#layout{
+    height: 600px;
+    width: 1500px;
+}
