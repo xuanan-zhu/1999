@@ -3,30 +3,73 @@ audio{
 }
 body{
     background: url("../img/bgphoto.jpg") ;
+    width: 100%
 }
-#top_div{
-    background: url("../img/title1.jpg") ;
+
+#photoshow{
+    object-fit: cover;
+    max-height: 100%;
+    float: right;
+
 }
-#top_div{
-    height: 200px;
-    width: 1500px;
+#writeshow{
+    background-size: contain
+}
+
+.top_div{
+    height: 100px;
+    width: 100%;
     margin: 6px;
     border-radius: 30px;
+    background-image: url("../img/title1.jpg") ;
+    background-size: contain;
 }
 #left_photo{
+    width: 40%;
     height: 600px;
-    width: 600px;
-    border-radius: 15px;
     float: left;
-    margin-left: 15px;
+    margin-right: 50px;
 }
 #right_write{
-    height: 600px;
-    width: 600px;
+    height: 40%;
+    width: 40%;
     float: right;
     margin-right: 50px;
 }
-#layout{
-    height: 600px;
-    width: 1500px;
+.layout{
+    height: 100%;
+    width: 100%;
 }
+/*适配手机*/
+@media (max-width: 600px) {
+    /* 在手机上应用以下样式 */
+    body {
+        transform: rotate(90deg); /* 旋转页面90度 */
+        width: 100vh; /* 将页面宽度设置为视口高度，以填满屏幕 */
+        height: 100vh; /* 将页面高度设置为视口宽度，以适应旋转后的宽度 */
+        overflow: hidden; /* 隐藏页面的溢出内容 */
+    }
+    .top_div {
+        width: 100%;
+        height: 10%;
+    }
+    #left_photo {
+        max-width: 40%;
+        max-height: 40%;
+        float: left;
+        margin-left: 10px;
+    }
+    #right_write {
+        max-width: 40%;
+        max-height: 40%;
+        float: right;
+        margin-left: 0px;
+    }
+    #writeshow{
+        object-fit: cover;
+        max-height: 100%;
+        max-width: 100%;
+        float: right;
+    }
+}
+

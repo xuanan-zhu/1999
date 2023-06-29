@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* 默认样式适用于窗口版本 */
+    .rotate-message {
+      display: none;
+    }
+    
+    /* 旋转样式 */
+    body {
+      transform: rotate(90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+    }
+    
+    /* 当设备方向为横向时，隐藏旋转样式并显示提示信息 */
+    @media (orientation: landscape) {
+      body {
+        transform: none;
+        width: auto;
+      }
+      
+      .rotate-message {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 旋转提示 -->
+  <div class="rotate-message">
+    请旋转您的手机以获得更好的浏览体验。
+  </div>
+  
+  <!-- 页面内容 -->
+</body>
+<script>
+  // 检测设备方向
+  if (window.matchMedia("(orientation: portrait)").matches) {
+    // 当设备方向为竖直方向时，应用旋转样式
+    document.body.style.transform = "rotate(90deg)";
+    document.body.style.transformOrigin = "left top";
+    document.body.style.width = "100vh";
+    document.body.style.overflowX = "hidden";
+  } else {
+    // 当设备方向为横向时，显示提示信息
+    document.querySelector(".rotate-message").style.display = "block";
+  }
+</script>
+</html>
