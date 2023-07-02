@@ -5,12 +5,17 @@ body{
     background: url("../img/bgphoto.jpg") ;
     width: 100%
 }
-
+#right_photo{
+    width: 40%;
+    height: 600px;
+    float: right;
+    margin-left: 0px;
+    margin-right: 50px;
+}
 #photoshow{
     object-fit: cover;
     max-height: 100%;
     float: right;
-
 }
 #writeshow{
     background-size: contain
@@ -24,13 +29,7 @@ body{
     background-image: url("../img/title1.jpg") ;
     background-size: contain;
 }
-#left_photo{
-    width: 40%;
-    height: 600px;
-    float: left;
-    margin-right: 50px;
-}
-#right_write{
+#left_write{
     height: 40%;
     width: 40%;
     float: right;
@@ -48,21 +47,30 @@ body{
         width: 100vh; /* 将页面宽度设置为视口高度，以填满屏幕 */
         height: 100vh; /* 将页面高度设置为视口宽度，以适应旋转后的宽度 */
         overflow: hidden; /* 隐藏页面的溢出内容 */
+        padding: 30px;
     }
     .top_div {
         width: 100%;
         height: 10%;
     }
-    #left_photo {
-        max-width: 40%;
-        max-height: 40%;
-        float: left;
-        margin-left: 10px;
-    }
-    #right_write {
+    #right_photo {
         max-width: 40%;
         max-height: 40%;
         float: right;
+    }
+    #photoshow{
+        object-fit: cover;
+        max-height: 100%;
+        float: right;
+    }
+    #writeshow{
+        background-size: contain;
+        margin-left: 10px;
+    }
+    #left_write {
+        max-width: 40%;
+        max-height: 40%;
+        float: left;
         margin-left: 0px;
     }
     #writeshow{
